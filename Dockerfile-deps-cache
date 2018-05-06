@@ -1,0 +1,7 @@
+FROM rwynn/monstache-builder:1.0.0
+
+WORKDIR /go/src/cache-app
+
+COPY monstache-cache.go /go/src/cache-app/monstache-cache.go
+
+RUN go get -d -v ./...
