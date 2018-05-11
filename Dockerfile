@@ -1,3 +1,7 @@
-FROM golang:1.10.2-alpine3.7
+FROM rwynn/monstache-builder:1.0.0
 
-RUN apk add --no-cache gcc go git musl-dev make zip
+WORKDIR /go/src/cache-app
+
+COPY monstache-deps-cache.go /go/src/cache-app/monstache-deps-cache.go
+
+RUN go get -d -v ./...
