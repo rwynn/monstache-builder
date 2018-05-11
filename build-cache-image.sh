@@ -1,1 +1,1 @@
-docker build . -t rwynn/monstache-builder-cache:1.0.0
+docker build . -t rwynn/monstache-builder-cache-rel3:1.0.0

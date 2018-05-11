@@ -1,3 +1,3 @@
-# Monstache builder dependency cache image
+# Monstache builder dependency cache image for rel3
 
-Cache dependencies used in the main repo in a docker image, speeding up build time
+Cache dependencies used in the main repo, rel3 branch, in a docker image, speeding up build time
