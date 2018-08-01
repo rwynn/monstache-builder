@@ -1,4 +1,4 @@
-FROM rwynn/monstache-builder:1.0.0
+FROM rwynn/monstache-builder:1.0.1
 
 WORKDIR /go/src/cache-app
 
