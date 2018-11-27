@@ -1,3 +1,3 @@
-FROM golang:1.11.0-alpine3.7
+FROM alpine:3.8
 
-RUN apk add --no-cache gcc go git musl-dev make zip
+RUN apk --no-cache add ca-certificates
