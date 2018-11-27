@@ -40,6 +40,7 @@ import (
 	"strings"
 	"sync"
 	"syscall"
+        "text/template"
 	"time"
 )
 
