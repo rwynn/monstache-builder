@@ -1,7 +1,11 @@
 FROM rwynn/monstache-builder:1.0.3
 
-WORKDIR /go/src/cache-app
+RUN mkdir /cache-module
 
-COPY monstache-deps-cache.go /go/src/cache-app/monstache-deps-cache.go
+WORKDIR /cache-module
 
-RUN go get -d -v ./... && rm -f /go/src/cache-app/monstache-deps-cache.go
+COPY go.mod /cache-module/go.mod
+
+COPY go.sum /cache-module/go.sum
+
+RUN go mod download && rm -rf /cache-module
