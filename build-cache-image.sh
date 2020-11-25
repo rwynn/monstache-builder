@@ -1,1 +1,1 @@
-docker build . -t rwynn/monstache-alpine:3.11.3
+docker build . -t rwynn/monstache-alpine:3.12.1
