@@ -1,3 +1,3 @@
-FROM golang:1.15.5-alpine3.12
+FROM golang:1.17.4-alpine3.15
 
-RUN apk add --no-cache gcc git musl-dev make zip
+RUN apk add --no-cache gcc git musl-dev make zip wget curl
